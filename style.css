@@ -86,6 +86,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -96,10 +98,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+h1, h2, h3, h4, .hero__title, .section-title {
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -562,15 +572,20 @@ h6 {
 
 .hero__image {
     flex: 0 0 380px;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-/* .hero__robot {
-    display: none;
-} */
+.hero__robot {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
+}
 
 .hero__robot-placeholder {
     /* width: 100%; */
@@ -1982,6 +1997,8 @@ h6 {
     color: var(--color-text-white);
     font-weight: 500;
     text-decoration: none;
+    word-break: break-word;
+    overflow-wrap: anywhere;
     transition: color var(--transition-fast);
 }
 
@@ -3088,16 +3105,22 @@ a.detail-value:hover {
    14. RESPONSIVE / MEDIA QUERIES
    ============================================================ */
 
-/* Tablet */
+/* Tablet & Smaller Laptops (<= 1024px) */
 @media (max-width: 1024px) {
     .hero__inner {
         flex-direction: column;
+        padding: var(--space-3xl) 0 var(--space-2xl);
+    }
+
+    .hero__content {
+        max-width: 100%;
     }
 
     .hero__image {
         flex: none;
         width: 100%;
-        max-width: 400px;
+        max-width: 440px;
+        margin: 0 auto;
     }
 
     .hero__stats-inner {
@@ -3125,6 +3148,7 @@ a.detail-value:hover {
 
     .systems__illustration {
         max-width: 280px;
+        margin: 0 auto;
     }
 
     .journey__header {
@@ -3139,14 +3163,6 @@ a.detail-value:hover {
     .cta-section__inner {
         flex-direction: column;
         gap: var(--space-xl);
-    }
-
-    .section-title {
-        font-size: var(--font-size-3xl);
-    }
-
-    .section-title--large {
-        font-size: var(--font-size-4xl);
     }
 
     .footer__top {
@@ -3292,19 +3308,15 @@ a.detail-value:hover {
         gap: var(--space-xl);
     }
 
-    .manhole-data-grid {
-        grid-template-columns: 1fr;
-    }
-
     .manhole-usecases-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* Mobile */
-@media (max-width: 640px) {
-    .navbar__logo-img {
-        height: 28px;
+/* Medium Tablets & Mobile Navigation Trigger (<= 880px) */
+@media (max-width: 880px) {
+    .navbar__cta {
+        display: none;
     }
 
     .navbar__links {
@@ -3324,9 +3336,27 @@ a.detail-value:hover {
         left: 0;
         right: 0;
         background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
         padding: var(--space-xl);
         gap: var(--space-lg);
         border-bottom: 1px solid var(--color-border-dark);
+        max-height: calc(100vh - 75px);
+        overflow-y: auto;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Hamburger Animation */
+    .navbar.nav-open .navbar__toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .navbar.nav-open .navbar__toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.nav-open .navbar__toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
     }
 
     /* Mobile Dropdown */
@@ -3356,13 +3386,13 @@ a.detail-value:hover {
         border: none;
         background: #121212;
         border-radius: var(--radius-sm);
-        transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+        transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.3s ease;
     }
 
     .navbar__dropdown.is-open .dropdown-menu {
         opacity: 1;
         visibility: visible;
-        max-height: 500px;
+        max-height: 600px;
         padding: 1.25rem;
         margin-top: 0.5rem;
         border: 1px solid #222222;
@@ -3373,83 +3403,147 @@ a.detail-value:hover {
         grid-template-columns: 1fr;
         gap: 1.25rem;
     }
+}
 
-    .hero__title {
-        font-size: 2.5rem;
-    }
-
-    .hero__stats-inner {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .mission__cards {
-        grid-template-columns: 1fr;
-    }
-
-    .purpose__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .journey__steps {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title {
-        font-size: var(--font-size-2xl);
-    }
-
-    .section-title--large {
-        font-size: var(--font-size-3xl);
-    }
-
-    .footer__top {
-        grid-template-columns: 1fr;
-    }
-
-    .footer__bottom {
-        flex-direction: column;
-        gap: var(--space-lg);
-        text-align: center;
-    }
-
+/* Standard Mobile (<= 640px) */
+@media (max-width: 640px) {
     .container {
         padding: 0 var(--space-md);
     }
 
-    /* About page mobile */
-    .about-hero__title {
-        font-size: 2.3rem;
+    .section {
+        padding: var(--space-3xl) 0;
     }
 
-    .about-media-placeholder {
-        aspect-ratio: 16 / 10;
-        min-height: 220px;
+    .navbar {
+        padding: var(--space-sm) 0;
     }
 
-    .about-section-heading {
-        font-size: 1.85rem;
+    .navbar__logo-img {
+        height: 28px;
     }
 
-    .about-principles-grid {
+    /* Hero */
+    .hero {
+        padding-top: 85px;
+    }
+
+    .hero__inner {
+        padding: var(--space-2xl) 0 var(--space-xl);
+        gap: var(--space-xl);
+    }
+
+    .hero__title {
+        font-size: clamp(1.85rem, 7.5vw, 2.75rem);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+    }
+
+    .hero__desc {
+        font-size: 0.85rem;
+        margin-bottom: var(--space-xl);
+    }
+
+    .hero__actions {
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+    }
+
+    .hero__image {
+        max-width: 100%;
+    }
+
+    .hero__robot {
+        max-height: 280px;
+        margin: 0 auto;
+    }
+
+    .hero__stats {
+        padding: var(--space-lg) 0;
+        margin-top: var(--space-lg);
+    }
+
+    .hero__stats-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
+    }
+
+    /* Grids */
+    .mission__cards,
+    .purpose__grid,
+    .journey__steps,
+    .about-principles-grid,
+    .manhole-stats-strip,
+    .manhole-usecases-grid,
+    .footer__top {
         grid-template-columns: 1fr;
     }
 
-    .about-cta-heading {
-        font-size: 2.2rem;
+    .section-title {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
     }
 
-    /* Robots page mobile */
+    .section-title--large {
+        font-size: clamp(1.85rem, 5.5vw, 2.5rem);
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--space-3xl) 0 var(--space-lg);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+        align-items: center;
+    }
+
+    /* About page */
+    .about-hero {
+        padding-top: 90px;
+        padding-bottom: var(--space-2xl);
+    }
+
+    .about-hero__title {
+        font-size: clamp(2rem, 6vw, 2.6rem);
+    }
+
+    .about-split-row__image-box {
+        min-height: 240px;
+        max-height: 320px;
+    }
+
+    .about-section-heading {
+        font-size: 1.75rem;
+    }
+
+    .about-cta-heading {
+        font-size: 2rem;
+    }
+
+    /* Robots page */
+    .robots-hero {
+        padding-top: 90px;
+        padding-bottom: var(--space-2xl);
+    }
+
     .robots-hero__title {
-        font-size: 2.3rem;
+        font-size: clamp(2rem, 6vw, 2.6rem);
     }
 
     .robots-overview-card {
-        padding: var(--space-xl);
+        padding: var(--space-lg);
     }
 
     .robots-overview-card__visual,
     .robots-overview-video {
         min-height: 220px;
+        max-height: 320px;
+    }
+
+    .robots-block-card {
+        padding: var(--space-lg);
     }
 
     .robots-path-row {
@@ -3461,9 +3555,18 @@ a.detail-value:hover {
         grid-column: auto;
     }
 
-    /* Contact page mobile */
+    /* Contact page */
+    .contact-hero {
+        padding-top: 90px;
+        padding-bottom: var(--space-2xl);
+    }
+
     .contact-hero__title {
-        font-size: 2.3rem;
+        font-size: clamp(2rem, 6vw, 2.6rem);
+    }
+
+    .contact-details-card {
+        padding: var(--space-lg);
     }
 
     .form-row--two-col {
@@ -3472,8 +3575,13 @@ a.detail-value:hover {
 
     .form-footer-row {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         gap: var(--space-md);
+    }
+
+    .form-footer-row .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .form-security-note {
@@ -3491,35 +3599,64 @@ a.detail-value:hover {
     }
 
     .contact-map-wrapper iframe {
-        height: 350px;
+        height: 300px;
     }
 
-    /* Manhole page mobile */
+    /* Manhole page */
+    .manhole-hero {
+        padding-top: 90px;
+        padding-bottom: var(--space-2xl);
+    }
+
     .manhole-hero__title {
-        font-size: 2.3rem;
-    }
-
-    .manhole-stats-strip {
-        grid-template-columns: 1fr;
-    }
-
-    .gas-readouts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .tamper-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .diagnostics-grid {
-        grid-template-columns: 1fr 1fr;
+        font-size: clamp(2rem, 6vw, 2.6rem);
     }
 
     .manhole-overview-card {
-        padding: var(--space-xl);
+        padding: var(--space-lg);
     }
 
-    .manhole-data-card {
-        padding: var(--space-xl);
+    .manhole-blank-visual {
+        min-height: 240px;
+        max-height: 320px;
+    }
+
+    .telemetry-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .telemetry-table {
+        min-width: 580px;
+    }
+}
+
+/* Small Screens (<= 420px) */
+@media (max-width: 420px) {
+    .container {
+        padding: 0 0.85rem;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__stats-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar__logo-img {
+        height: 25px;
+    }
+
+    .contact-map-wrapper iframe {
+        height: 250px;
     }
 }

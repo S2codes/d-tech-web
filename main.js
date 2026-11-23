@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdown = document.querySelector('.navbar__dropdown');
 
     if (navToggle) {
-        navToggle.addEventListener('click', () => {
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
             navbar.classList.toggle('nav-open');
         });
     }
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dropdownToggle && dropdown) {
         dropdownToggle.addEventListener('click', (e) => {
             e.preventDefault();
+            e.stopPropagation();
             dropdown.classList.toggle('is-open');
             const isOpen = dropdown.classList.contains('is-open');
             dropdownToggle.setAttribute('aria-expanded', isOpen);
@@ -40,6 +42,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Close mobile drawer when clicking outside the navbar
+    document.addEventListener('click', (e) => {
+        if (navbar && navbar.classList.contains('nav-open')) {
+            if (!navbar.contains(e.target)) {
+                navbar.classList.remove('nav-open');
+            }
+        }
+    });
+
+    // Close mobile drawer when any link (excluding dropdown toggle) is clicked
+    const navLinks = document.querySelectorAll('.navbar__links a:not(.navbar__dropdown-toggle)');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbar) {
+                navbar.classList.remove('nav-open');
+            }
+        });
+    });
 
 
     /* ========================================================
