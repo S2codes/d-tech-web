@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-TECH - Engineering Beyond The Limits</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <img src="images/logo.png" alt="D-TECH Robotics" class="navbar__logo-img">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="navbar__dropdown">
+                    <a href="javascript:void(0)" class="navbar__dropdown-toggle" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        Products <span class="dropdown-chevron">▾</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu__grid">
+                            <!-- Category 1: Robot -->
+                            <div class="dropdown-col">
+                                <span class="dropdown-category-title"><span class="category-dot"></span>Robot</span>
+                                <ul class="dropdown-list">
+                                    <li>
+                                        <a href="robots.html" class="dropdown-item">
+                                            <span class="dropdown-item__name">Snake Robot</span>
+                                            <span class="dropdown-item__tag">Exploration & Inspection</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Category 2: IoT -->
+                            <div class="dropdown-col">
+                                <span class="dropdown-category-title"><span class="category-dot"></span>IoT</span>
+                                <ul class="dropdown-list">
+                                    <li>
+                                        <a href="smart-manhole.html" class="dropdown-item">
+                                            <span class="dropdown-item__name">Smart Manhole</span>
+                                            <span class="dropdown-item__tag">Subsurface Telemetry</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary navbar__cta">Let's collaborate ↗</a>
+            <button class="navbar__toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <!-- <p class="hero__eyebrow">Products &nbsp;/ &nbsp;Robots &nbsp;/ &nbsp;What's next</p> -->
+                <h1 class="hero__title">Engineering Deep-Tech Innovations for a Safer, Smarter and More Resilient World
+                </h1>
+                <p class="hero__desc">From battlefield reconnaissance to search-and-rescue in
+                    sprawling disaster zones or exploration into uncharted terrain in spaces,
+                    every system we build serves a greater purpose.</p>
+                <div class="hero__actions">
+                    <a href="#" class="btn btn--primary">Business delta →</a>
+                    <a href="#" class="btn btn--outline">Discover →</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="./images/snake.png" alt="Robot Vehicle" class="hero__robot">
+
+                <div class="hero__robot-placeholder">
+
+                </div>
+            </div>
+        </div>
+        <!-- Stats Bar -->
+        <!-- <div class="hero__stats">
+            <div class="container hero__stats-inner">
+                <div class="stat">
+                    <span class="stat__number" data-target="15400">$15,400</span>
+                    <span class="stat__label">Revenue generated</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">40+ countries</span>
+                    <span class="stat__label">Global presence</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">4400 clients</span>
+                    <span class="stat__label">Worldwide partnerships</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">300+ engineers</span>
+                    <span class="stat__label">In-house R&D talent</span>
+                </div>
+            </div>
+        </div> -->
+
+    </header>
+
+    <!-- ===================== MISSION SECTION ===================== -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission__header">
+                <h2 class="section-title">Where risk begins,<br>possibility should follow.</h2>
+                <p class="mission__desc">
+                    Our mission is clear: build rugged and intelligent systems. What we bring is a commitment to those
+                    who serve,
+                    explore, and protect — with technology designed to perform where failure is not an option.
+                </p>
+                <a href="#" class="link-arrow link-arrow--green">Learn more →</a>
+            </div>
+            <div class="mission__cards">
+                <div class="mission__card">
+                    <div class="mission__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#b4f03e" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Protect human life</h3>
+                    <p>Engineer robotics that keep people safe by tackling the most dangerous tasks in the world's
+                        toughest environments.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#b4f03e" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                    </div>
+                    <h3>Extend human capability</h3>
+                    <p>Build systems that augment and extend what people can do — going further, seeing more, and
+                        responding faster.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#b4f03e" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <h3>Move research forward</h3>
+                    <p>Push the boundaries of autonomous systems, making breakthroughs that redefine what's possible in
+                        the field.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PURPOSE SECTION ===================== -->
+    <section class="purpose">
+        <div class="container">
+            <div class="purpose__header">
+                <div class="purpose__header-left">
+                    <h2 class="section-title section-title--white">Purpose, across every terrain.</h2>
+                </div>
+                <div class="purpose__header-right">
+                    <p>Built to perform where it matters most — our systems are deployed across six key sectors, each
+                        defined by urgency, complexity, and the need to protect.</p>
+                </div>
+            </div>
+            <div class="purpose__grid">
+                <div class="purpose__card">
+                    <div class="purpose__card-icon">◈</div>
+                    <h3>Disaster management</h3>
+                    <p>Provide real-time surveillance, detect survivors, and deliver critical supplies in earthquake,
+                        flood, and wildfire recovery zones.</p>
+                </div>
+                <div class="purpose__card">
+                    <div class="purpose__card-icon">◎</div>
+                    <h3>Search & rescue</h3>
+                    <p>Navigate rubble, dense forests, and submerged environments to locate and assist those in
+                        life-threatening situations.</p>
+                </div>
+                <div class="purpose__card">
+                    <div class="purpose__card-icon">⬡</div>
+                    <h3>Defence & security</h3>
+                    <p>Support perimeter defense, tactical reconnaissance, and threat neutralization in high-risk
+                        security operations.</p>
+                </div>
+                <div class="purpose__card">
+                    <div class="purpose__card-icon">◇</div>
+                    <h3>Research & exploration</h3>
+                    <p>Gather environmental data and explore unreachable terrain — from deep-sea floors to volcanic
+                        craters and polar regions.</p>
+                </div>
+                <div class="purpose__card">
+                    <div class="purpose__card-icon">⬢</div>
+                    <h3>Industrial safety</h3>
+                    <p>Inspect hazardous infrastructure, monitor environmental risks, and perform dangerous maintenance
+                        autonomously.</p>
+                </div>
+                <div class="purpose__card">
+                    <div class="purpose__card-icon">◈</div>
+                    <h3>Allied applications</h3>
+                    <p>Deploy adaptable platforms for agriculture, logistics, mining, and humanitarian missions in
+                        diverse environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SYSTEMS SECTION ===================== -->
+    <section class="systems">
+        <div class="container">
+            <!-- <p class="systems__eyebrow">01 — Interoperable framework</p> -->
+            <div class="systems__inner">
+                <div class="systems__left">
+                    <!-- <h2 class="section-title section-title--white systems__title">Many systems.<br>One shared purpose.
+                    </h2> -->
+                    <div class="systems__illustration">
+                        <!-- Isometric layers illustration -->
+                        <img src="images/gear.png" alt="isometric" class="gearImg">
+
+                        <!-- <svg viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="systems__iso-svg">
+
+                            <polygon points="160,220 40,160 160,100 280,160" fill="#4a5a20" stroke="#b4f03e"
+                                stroke-width="1.5" opacity="0.4" />
+
+                            <polygon points="160,190 50,135 160,80 270,135" fill="#5a6a25" stroke="#b4f03e"
+                                stroke-width="1.5" opacity="0.6" />
+
+                            <polygon points="160,160 60,110 160,60 260,110" fill="#6a7a2a" stroke="#b4f03e"
+                                stroke-width="1.5" opacity="0.8" />
+                            <circle cx="160" cy="60" r="3" fill="#b4f03e" />
+                            <circle cx="120" cy="80" r="2" fill="#b4f03e" opacity="0.6" />
+                            <circle cx="200" cy="80" r="2" fill="#b4f03e" opacity="0.6" />
+                            <circle cx="160" cy="100" r="2.5" fill="#b4f03e" opacity="0.5" />
+                            <circle cx="100" cy="110" r="2" fill="#b4f03e" opacity="0.4" />
+                            <circle cx="220" cy="110" r="2" fill="#b4f03e" opacity="0.4" />
+                        </svg> -->
+
+
+                    </div>
+                </div>
+                <div class="systems__right">
+                    <div class="systems__feature">
+                        <div class="systems__feature-icon">▸</div>
+                        <div>
+                            <h4>Move through complexity</h4>
+                            <p>Navigate challenging terrain with precision using coordinated, real-time autonomous
+                                navigation systems.</p>
+                        </div>
+                    </div>
+                    <div class="systems__feature">
+                        <div class="systems__feature-icon">▸</div>
+                        <div>
+                            <h4>Make sense of surroundings</h4>
+                            <p>Fuse multi-sensor data streams to create an adaptive, real-time understanding of the
+                                environment.</p>
+                        </div>
+                    </div>
+                    <div class="systems__feature">
+                        <div class="systems__feature-icon">▸</div>
+                        <div>
+                            <h4>Keep people in control</h4>
+                            <p>Maintain human oversight at every level — from mission planning to real-time operational
+                                command.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== JOURNEY SECTION ===================== -->
+    <section class="journey">
+        <div class="container">
+            <div class="journey__header">
+                <div class="journey__header-left">
+                    <h2 class="section-title">Ambitious by design.<br>Honest about the journey.</h2>
+                </div>
+                <div class="journey__header-right">
+                    <p>We approach every project with a clear-eyed view of what it takes — no shortcuts, no empty
+                        promises. Just real engineering, applied with precision and purpose.</p>
+                </div>
+            </div>
+            <div class="journey__steps">
+                <div class="journey__step">
+                    <h3>Understand</h3>
+                    <p>Map real-world conditions, define constraints, and identify the core challenges that shape system
+                        design.</p>
+                    <div class="journey__progress">
+                        <div class="journey__progress-bar" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="journey__step">
+                    <h3>Explore</h3>
+                    <p>Prototype rapidly, test bold ideas early, and converge on approaches that survive real-world
+                        validation.</p>
+                    <div class="journey__progress">
+                        <div class="journey__progress-bar" style="width: 72%;"></div>
+                    </div>
+                </div>
+                <div class="journey__step">
+                    <h3>Build & evaluate</h3>
+                    <p>Turn validated concepts into field-ready systems through rigorous engineering and iterative
+                        testing.</p>
+                    <div class="journey__progress">
+                        <div class="journey__progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="journey__step">
+                    <h3>Educate responsibly</h3>
+                    <p>Share insights, train operators, and contribute to ethical frameworks that guide autonomous
+                        technology use.</p>
+                    <div class="journey__progress">
+                        <div class="journey__progress-bar" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA / FOOTER SECTION ===================== -->
+    <section class="cta-section">
+        <div class="container">
+            <p class="contact-hero__sublink">Let's work together</p>
+            <div class="cta-section__inner">
+                <div class="cta-section__left">
+                    <h2 class="section-title section-title--white section-title--large">The next frontier<br>starts with
+                        a question.</h2>
+                </div>
+                <div class="cta-section__right">
+                    <p>Whether you're exploring new capabilities or solving existing challenges, we're ready to listen.
+                        Reach out and let's shape what comes next — together.</p>
+                    <a href="#" class="btn btn--primary">Start a conversation →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="images/logo.png" alt="D-TECH Robotics" class="footer__logo-img">
+                    </a>
+                    <p class="footer__brand-desc">D-Tech Robotics builds rugged autonomous systems that protect lives
+                        and extend human capability in the world's most demanding environments.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="robots.html">Snake Robot</a></li>
+                        <li><a href="smart-manhole.html">Smart Manhole (IoT)</a></li>
+                        <li><a href="robots.html">Robotics Suite</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Cookie settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 D-Tech Robotics. All rights reserved.</p>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/dte4-dtech-895834318/" target="_blank"
+                        rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+                        aria-label="X (Twitter)" title="X (Twitter)">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+                        aria-label="YouTube" title="YouTube">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="footer__social-link" aria-label="Instagram" title="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

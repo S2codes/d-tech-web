@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-TECH — SM-X4 Smart Manhole Node | Product Specifications</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-manhole">
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <img src="images/logo.png" alt="D-TECH Robotics" class="navbar__logo-img">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="navbar__dropdown active">
+                    <a href="javascript:void(0)" class="navbar__dropdown-toggle" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        Products <span class="dropdown-chevron">▾</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu__grid">
+                            <!-- Category 1: Robot -->
+                            <div class="dropdown-col">
+                                <span class="dropdown-category-title"><span class="category-dot"></span>Robot</span>
+                                <ul class="dropdown-list">
+                                    <li>
+                                        <a href="robots.html" class="dropdown-item">
+                                            <span class="dropdown-item__name">Snake Robot</span>
+                                            <span class="dropdown-item__tag">Exploration &amp; Inspection</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Category 2: IoT -->
+                            <div class="dropdown-col">
+                                <span class="dropdown-category-title"><span class="category-dot"></span>IoT</span>
+                                <ul class="dropdown-list">
+                                    <li>
+                                        <a href="smart-manhole.html" class="dropdown-item active">
+                                            <span class="dropdown-item__name">Smart Manhole</span>
+                                            <span class="dropdown-item__tag">SM-X4 Technical Specifications</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary navbar__cta">Let's collaborate ↗</a>
+            <button class="navbar__toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <header class="manhole-hero">
+        <div class="container">
+            <div class="manhole-hero__top">
+                <div class="manhole-hero__heading-box">
+
+                    <h1 class="manhole-hero__title">SM-X4 Smart Manhole</h1>
+                </div>
+                <div class="manhole-hero__status-box">
+                    <span class="status-live-indicator"><span class="live-dot"></span>PRODUCT STAGE: PRODUCTION
+                        READY</span>
+                    <p class="manhole-status-text">Manufactured by D-Tech Robotics.<br>Industrial IoT underground node.
+                    </p>
+                </div>
+            </div>
+
+            <div class="manhole-hero__meta">
+                <span class="manhole-meta-left">FORM FACTOR: LOW-PROFILE UNDER-COVER RETROFIT &nbsp;/ &nbsp;IP68 &amp;
+                    ATEX ZONE 0 CERTIFIED</span>
+                <span class="manhole-meta-right">COMMUNICATION: DUAL NB-IOT &amp; LORAWAN</span>
+            </div>
+
+            <!-- Key Specs Metric Strip -->
+            <div class="manhole-stats-strip">
+                <div class="stat-card">
+                    <div class="stat-card__header">
+                        <span class="stat-card__num">01</span>
+                        <span class="stat-card__tag">ENCLOSURE RATING</span>
+                    </div>
+                    <div class="stat-card__value">IP68 <span class="stat-unit">IK10</span></div>
+                    <div class="stat-card__label">Submersible to 5m <span
+                            class="val-status val-status--good">Certified</span></div>
+                    <div class="stat-card__meter">
+                        <div class="stat-meter-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__header">
+                        <span class="stat-card__num">02</span>
+                        <span class="stat-card__tag">EXPLOSION SAFETY</span>
+                    </div>
+                    <div class="stat-card__value">Zone 0 <span class="stat-unit">ATEX</span></div>
+                    <div class="stat-card__label">Intrinsically Safe <span class="val-status val-status--good">Ex ia IIC
+                            T4</span></div>
+                    <div class="stat-card__meter">
+                        <div class="stat-meter-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__header">
+                        <span class="stat-card__num">03</span>
+                        <span class="stat-card__tag">BATTERY ENDURANCE</span>
+                    </div>
+                    <div class="stat-card__value">5–7 <span class="stat-unit">Years</span></div>
+                    <div class="stat-card__label">19Ah Li-SOCl₂ Cell <span class="val-status val-status--good">Ultra-Low
+                            Power</span></div>
+                    <div class="stat-card__meter">
+                        <div class="stat-meter-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__header">
+                        <span class="stat-card__num">04</span>
+                        <span class="stat-card__tag">LEVEL ACCURACY</span>
+                    </div>
+                    <div class="stat-card__value">±1.0 <span class="stat-unit">mm</span></div>
+                    <div class="stat-card__label">Ultrasonic ToF Range <span class="val-status val-status--good">0.1m –
+                            4.0m</span></div>
+                    <div class="stat-card__meter">
+                        <div class="stat-meter-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview Card -->
+            <div class="manhole-overview-card">
+                <div class="manhole-overview-card__info">
+                    <span class="manhole-card-label">01 / Engineering Overview</span>
+
+                    <div class="manhole-info-block">
+                        <span class="manhole-info-label">Product Description</span>
+                        <p class="manhole-info-val">
+                            The D-TECH SM-X4 is an intrinsically safe, multi-parameter IoT sensing node specifically
+                            engineered for direct bolt-on installation beneath ductile iron and composite manhole
+                            covers. It delivers uninterrupted surveillance of subterranean sewer mains, storm runoffs,
+                            and telecommunications vaults.
+                        </p>
+                    </div>
+
+                    <div class="manhole-info-block">
+                        <span class="manhole-info-label">Mechanical Architecture</span>
+                        <p class="manhole-info-val">
+                            Corrosion-resistant UV-stabilized polymer &amp; 316L stainless steel enclosure with
+                            integrated omnidirectional slot antenna tuned for subterranean signal penetration through
+                            roadway covers.
+                        </p>
+                    </div>
+
+                    <div class="manhole-info-block">
+                        <span class="manhole-info-label">Installation &amp; Maintenance</span>
+                        <p class="manhole-info-val">
+                            Bolt-on expandable perimeter bracket requiring &lt;15 minutes retrofit without road
+                            excavation, external wiring, or trench cutting. Field-replaceable battery pack.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technical Drawing Frame -->
+                <div class="manhole-overview-card__visual">
+                    <div class="manhole-blank-visual">
+                        <img src="images/manhole.png" alt="D-TECH SM-X4 Smart Manhole Node" class="manhole-visual-img">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+    <!-- ===================== SECTION 02: TECHNICAL DATASHEET TABLE ===================== -->
+    <section class="manhole-section manhole-section--border">
+        <div class="container">
+            <div class="manhole-section-header">
+                <div class="manhole-section-header__left">
+                    <span class="section-tag">02 &nbsp;/ &nbsp;COMPLETE TECHNICAL DATASHEET</span>
+                    <h2 class="manhole-section-title">Hardware specifications.</h2>
+                </div>
+                <div class="manhole-section-header__right">
+                    <p class="manhole-section-subtext">
+                        Comprehensive mechanical, electrical, connectivity, and environmental parameters for D-TECH
+                        SM-X4.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Single Comprehensive Hardware Specification Table -->
+            <div class="telemetry-table-wrapper">
+                <table class="telemetry-table">
+                    <thead>
+                        <tr>
+                            <th>PARAMETER CATEGORY</th>
+                            <th>SPECIFICATION ATTRIBUTE</th>
+                            <th>ENGINEERING VALUE</th>
+                            <th>STANDARD / RATING</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Category: Mechanical & Physical -->
+                        <tr class="table-category-row">
+                            <td colspan="4">// MECHANICAL &amp; PHYSICAL SPECIFICATIONS</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Dimensions</td>
+                            <td>Enclosure Form Factor</td>
+                            <td class="col-val font-mono">Ø 180 mm × H 45 mm</td>
+                            <td class="col-threshold">Low profile under-cover disc</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Weight</td>
+                            <td>Total Device Weight</td>
+                            <td class="col-val font-mono">1.25 kg (including battery)</td>
+                            <td class="col-threshold">316L bracket: +0.45 kg</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Enclosure Material</td>
+                            <td>Housing Composition</td>
+                            <td class="col-val font-mono">Polycarbonate / PBT Alloy + 316L SS</td>
+                            <td class="col-threshold">Corrosion &amp; UV resistant</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Operating Temp</td>
+                            <td>Operational Climate Range</td>
+                            <td class="col-val font-mono">-40°C to +85°C (-40°F to +185°F)</td>
+                            <td class="col-threshold">Industrial grade components</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Mechanical Impact</td>
+                            <td>Shock &amp; Drop Resistance</td>
+                            <td class="col-val font-mono">IK10 (20 Joules impact)</td>
+                            <td class="col-threshold">EN 62262 standard</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Ingress Protection</td>
+                            <td>Water &amp; Dust Ingress</td>
+                            <td class="col-val font-mono">IP68 (5 meters for 72 hours)</td>
+                            <td class="col-threshold">IEC 60529 certified</td>
+                        </tr>
+
+                        <!-- Category: Sensing Suite -->
+                        <tr class="table-category-row">
+                            <td colspan="4">// SENSING SUITE &amp; METROLOGY</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Level Sensing</td>
+                            <td>Ultrasonic Time-of-Flight</td>
+                            <td class="col-val font-mono">0.1 m to 4.0 m (±1.0 mm accuracy)</td>
+                            <td class="col-threshold">Sub-millimeter resolution</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Gas Detection</td>
+                            <td>Multi-Gas Electrochemical Array</td>
+                            <td class="col-val font-mono">H₂S (0–200 ppm), CH₄ (0–100% LEL), CO, O₂</td>
+                            <td class="col-threshold">Hazard alert &lt;10s response</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Cover Displacement</td>
+                            <td>3-Axis Tilt &amp; Magnetic Tamper</td>
+                            <td class="col-val font-mono">Tilt detection &gt;5°, Hall-effect sensor</td>
+                            <td class="col-threshold">Real-time unseating alarm</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Microclimate</td>
+                            <td>Internal Ambient Conditions</td>
+                            <td class="col-val font-mono">Temp ±0.3°C, Humidity 0–100% RH, Pressure</td>
+                            <td class="col-threshold">Inundation pre-warning</td>
+                        </tr>
+
+                        <!-- Category: Connectivity -->
+                        <tr class="table-category-row">
+                            <td colspan="4">// CONNECTIVITY &amp; TELEMETRY</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Primary Cellular</td>
+                            <td>Narrowband IoT (NB-IoT)</td>
+                            <td class="col-val font-mono">LTE Cat NB1 / NB2 (B1, B3, B5, B8, B20, B28)</td>
+                            <td class="col-threshold">3GPP Release 14 compliant</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">LPWAN Backup</td>
+                            <td>LoRaWAN Option</td>
+                            <td class="col-val font-mono">Region configurable: EU868 / US915 / AS923</td>
+                            <td class="col-threshold">LoRa Alliance Class A</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Antenna System</td>
+                            <td>Subterranean RF Antenna</td>
+                            <td class="col-val font-mono">Integrated slotted-cavity directional array</td>
+                            <td class="col-threshold">Penetrates cast iron covers</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Data Protocols</td>
+                            <td>Cloud Telemetry Transport</td>
+                            <td class="col-val font-mono">MQTT-SN, CoAP, HTTPS, LwM2M</td>
+                            <td class="col-threshold">AES-256 GCM encrypted</td>
+                        </tr>
+
+                        <!-- Category: Power & Electrical -->
+                        <tr class="table-category-row">
+                            <td colspan="4">// POWER &amp; ELECTRICAL SPECIFICATIONS</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Power Source</td>
+                            <td>Internal Battery Pack</td>
+                            <td class="col-val font-mono">Lithium Thionyl Chloride (Li-SOCl₂) 19 Ah / 3.6V</td>
+                            <td class="col-threshold">Non-rechargeable industrial cell</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Battery Lifespan</td>
+                            <td>Operating Autonomous Life</td>
+                            <td class="col-val font-mono">5 to 7+ Years (at 1h reporting interval)</td>
+                            <td class="col-threshold">Quiescent draw: &lt; 12 µA</td>
+                        </tr>
+
+                        <!-- Category: Compliance -->
+                        <tr class="table-category-row">
+                            <td colspan="4">// SAFETY &amp; REGULATORY COMPLIANCE</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Hazardous Area</td>
+                            <td>Explosive Atmosphere Safety</td>
+                            <td class="col-val font-mono">ATEX II 1G Ex ia IIC T4 Ga</td>
+                            <td class="col-threshold">IECEx Zone 0 certified</td>
+                        </tr>
+                        <tr>
+                            <td class="col-param font-mono">Certifications</td>
+                            <td>Regulatory Approvals</td>
+                            <td class="col-val font-mono">CE, FCC Part 15, RoHS, WEEE, ATEX Zone 0</td>
+                            <td class="col-threshold">Global compliance verified</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 03: SYSTEM ARCHITECTURE ===================== -->
+    <section class="manhole-section manhole-section--border">
+        <div class="container">
+            <div class="manhole-section-header">
+                <div class="manhole-section-header__left">
+                    <span class="section-tag">03 &nbsp;/ &nbsp;SYSTEM INTEGRATION</span>
+                    <h2 class="manhole-section-title">End-to-end telemetry architecture.</h2>
+                </div>
+                <div class="manhole-section-header__right">
+                    <p class="manhole-section-subtext">
+                        Designed to link directly into city SCADA control centers, municipal drainage GIS platforms, and
+                        cloud telemetry databases.
+                    </p>
+                </div>
+            </div>
+
+            <div class="manhole-usecases-grid">
+                <div class="usecase-card">
+                    <span class="usecase-num">01</span>
+                    <h3 class="usecase-title">Edge Device Processing</h3>
+                    <p class="usecase-desc">ARM Cortex-M4 low-power microcontroller performs continuous edge filtering,
+                        noise rejection, threshold checking, and battery state analysis.</p>
+                    <div class="usecase-tag">EDGE TELEMETRY ENGINE</div>
+                </div>
+
+                <div class="usecase-card">
+                    <span class="usecase-num">02</span>
+                    <h3 class="usecase-title">Subsurface Wireless Gateway</h3>
+                    <p class="usecase-desc">Direct transmission through cellular NB-IoT towers or regional LoRaWAN
+                        gateways with zero required roadside repeater infrastructure.</p>
+                    <div class="usecase-tag">SUBTERRANEAN RF TRANSMISSION</div>
+                </div>
+
+                <div class="usecase-card">
+                    <span class="usecase-num">03</span>
+                    <h3 class="usecase-title">SCADA &amp; Municipal Cloud API</h3>
+                    <p class="usecase-desc">Standardized RESTful APIs, Webhooks, and Modbus TCP bridge for seamless
+                        ingestion into existing smart city utility dashboards.</p>
+                    <div class="usecase-tag">OPEN PROTOCOL INTEGRATION</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 04: RETROFIT & INSTALLATION ===================== -->
+    <section class="manhole-section manhole-section--border">
+        <div class="container">
+            <div class="manhole-section-header">
+                <div class="manhole-section-header__left">
+                    <span class="section-tag">04 &nbsp;/ &nbsp;INSTALLATION WORKFLOW</span>
+                    <h2 class="manhole-section-title">Rapid retrofit in &lt;15 minutes.</h2>
+                </div>
+                <div class="manhole-section-header__right">
+                    <p class="manhole-section-subtext">
+                        Standardized universal bracket mechanism engineered for immediate deployment across existing
+                        municipal infrastructure without drilling the cover or trenching roads.
+                    </p>
+                </div>
+            </div>
+
+            <div class="robots-path-table">
+                <!-- Step 1 -->
+                <div class="robots-path-row">
+                    <div class="robots-path-col robots-path-col--num">01</div>
+                    <div class="robots-path-col robots-path-col--title">Perimeter Frame Measurement</div>
+                    <div class="robots-path-col robots-path-col--desc">Inspect manhole rim (fits standard 600 mm, 750
+                        mm, and 900 mm ductile iron, steel, or composite frames).</div>
+                    <div class="robots-path-col robots-path-col--status">
+                        <span class="status-pill status-pill--active">UNIVERSAL FIT</span>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="robots-path-row">
+                    <div class="robots-path-col robots-path-col--num">02</div>
+                    <div class="robots-path-col robots-path-col--title">Expandable 316L Bracket Lock</div>
+                    <div class="robots-path-col robots-path-col--desc">Lock the high-tensile stainless steel expander
+                        bracket securely beneath the chamber seating rim using single-hex tool.</div>
+                    <div class="robots-path-col robots-path-col--status">
+                        <span class="status-pill status-pill--active">NO ROAD DRILLING</span>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="robots-path-row">
+                    <div class="robots-path-col robots-path-col--num">03</div>
+                    <div class="robots-path-col robots-path-col--title">Bayonet Node Twist-Lock</div>
+                    <div class="robots-path-col robots-path-col--desc">Insert the SM-X4 device into the center bracket
+                        mount with quick 90° bayonet lock and arm magnetic tamper sensor.</div>
+                    <div class="robots-path-col robots-path-col--status">
+                        <span class="status-pill">TOOLLESS LOCK</span>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="robots-path-row">
+                    <div class="robots-path-col robots-path-col--num">04</div>
+                    <div class="robots-path-col robots-path-col--title">NFC Tap &amp; Field Commissioning</div>
+                    <div class="robots-path-col robots-path-col--desc">Tap smartphone or field tablet via NFC to
+                        register GPS coordinates, verify RF link, and bind node to municipal cloud.</div>
+                    <div class="robots-path-col robots-path-col--status">
+                        <span class="status-pill">INSTANT PROVISIONING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA SECTION ===================== -->
+    <section class="about-cta-section about-section--border">
+        <div class="container">
+            <p class="about-cta-eyebrow">DEVELOPER &amp; MUNICIPAL PARTNERSHIPS</p>
+            <div class="about-cta-row">
+                <div class="about-cta-row__left">
+                    <h2 class="about-cta-heading">
+                        Integrate SM-X4<br>into your network.
+                    </h2>
+                </div>
+                <div class="about-cta-row__right">
+                    <p class="about-cta-text">
+                        We manufacture the SM-X4 and provide full SDKs, hardware evaluation kits, CAD mounting models,
+                        and cloud API access for municipal pilots and industrial utilities.
+                    </p>
+                    <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn--primary about-cta-btn">Request hardware dev kit ↗</a>
+                        <a href="contact.html" class="btn btn--outline about-cta-btn">Download datasheet ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="images/logo.png" alt="D-TECH Robotics" class="footer__logo-img">
+                    </a>
+                    <p class="footer__brand-desc">Engineering advanced robotics &amp; subsurface IoT hardware for the
+                        moments that matter most.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>EXPLORE</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="robots.html">Snake Robot</a></li>
+                        <li><a href="smart-manhole.html">Smart Manhole (SM-X4)</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>HARDWARE PRODUCTS</h4>
+                    <ul>
+                        <li><a href="robots.html">Snake Inspection Robot</a></li>
+                        <li><a href="smart-manhole.html">SM-X4 Manhole Node</a></li>
+                        <li><a href="smart-manhole.html">Subterranean RF Gateway</a></li>
+                        <li><a href="smart-manhole.html">IoT Sensor Array Modules</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__tag-header"><span class="status-dot"></span> IN PRODUCTION</h4>
+                    <p class="footer__dev-text">Manufactured by D-Tech Robotics for municipal utility operators.</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 D-Tech Robotics. All rights reserved.</p>
+                <div class="footer__socials">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+                        aria-label="X (Twitter)" title="X (Twitter)">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+                        aria-label="YouTube" title="YouTube">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="footer__social-link" aria-label="Instagram" title="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__tagline">Hardware Engineering. Real-World Purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
