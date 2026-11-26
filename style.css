@@ -288,7 +288,7 @@ h6 {
 }
 
 .navbar__logo-img {
-    height: 32px;
+    height: 55px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -1217,6 +1217,9 @@ h6 {
     letter-spacing: -0.03em;
     line-height: 1.15;
     color: var(--color-text-white);
+    /* text-align: center; */
+    margin: auto;
+    display: flex;
 }
 
 /* Section 01: Split Row */
@@ -1385,6 +1388,247 @@ h6 {
     letter-spacing: 0.1em;
     color: var(--color-text-muted);
     font-weight: 600;
+}
+
+/* ============================================================
+   ABOUT PAGE: LEADERSHIP SECTION
+   ============================================================ */
+.about-leadership-grid {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: var(--space-4xl);
+    align-items: stretch;
+}
+
+.about-leadership-media {
+    position: relative;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid #222222;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-leadership-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: brightness(0.92) contrast(1.05);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.about-leadership-media:hover img {
+    transform: scale(1.03);
+    filter: brightness(1) contrast(1.05);
+}
+
+.about-leadership-overlay-badge {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: var(--space-lg);
+    right: var(--space-lg);
+    background: rgba(10, 10, 10, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid #2b2b2b;
+    border-left: 3px solid var(--color-primary);
+    padding: 0.85rem 1.15rem;
+    border-radius: var(--radius-xs);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about-leadership-badge-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--color-text-white);
+    display: block;
+}
+
+.about-leadership-badge-sub {
+    font-size: 0.72rem;
+    color: var(--color-primary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about-leadership-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-xl);
+}
+
+.about-leadership-bio-card {
+    background: #111111;
+    border: 1px solid #222222;
+    border-radius: var(--radius-sm);
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.about-leadership-founder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.about-leadership-name {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--color-text-white);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+
+.about-leadership-role-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(180, 240, 62, 0.08);
+    border: 1px solid rgba(180, 240, 62, 0.25);
+    padding: 0.3rem 0.75rem;
+    border-radius: var(--radius-xs);
+}
+
+.about-leadership-quote {
+    font-size: 0.96rem;
+    font-style: italic;
+    color: #cccccc;
+    line-height: 1.65;
+    border-left: 2px solid var(--color-primary);
+    padding-left: var(--space-md);
+    margin: var(--space-xs) 0;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.about-team-card {
+    background: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    border-radius: var(--radius-xs);
+    padding: 1rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.about-team-card:hover {
+    border-color: #333333;
+    background: #151515;
+}
+
+.about-team-name {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--color-text-white);
+}
+
+.about-team-role {
+    font-size: 0.72rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.about-team-desc {
+    font-size: 0.76rem;
+    color: #777777;
+    margin-top: 2px;
+}
+
+/* ============================================================
+   ABOUT PAGE: ASSOCIATIONS & LOGOS SECTION
+   ============================================================ */
+.about-associations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+}
+
+.association-card {
+    background: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    border-radius: var(--radius-sm);
+    padding: var(--space-2xl) var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    transition: transform var(--transition-normal), border-color var(--transition-fast), background var(--transition-fast);
+    position: relative;
+}
+
+.association-card:hover {
+    border-color: #383838;
+    background: #141414;
+    transform: translateY(-4px);
+}
+
+.association-logo-box {
+    width: 54px;
+    height: 54px;
+    border-radius: var(--radius-xs);
+    background: #161616;
+    border: 1px solid #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.association-card:hover .association-logo-box {
+    border-color: var(--color-primary);
+}
+
+.association-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.association-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text-white);
+    line-height: 1.35;
+}
+
+.association-desc {
+    font-size: 0.82rem;
+    color: #888888;
+    line-height: 1.6;
+}
+
+.association-badge {
+    margin-top: auto;
+    font-size: 0.7rem;
+    font-family: monospace;
+    color: #666666;
+    background: #141414;
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius-xs);
+    border: 1px solid #202020;
 }
 
 /* CTA Section */
@@ -3251,6 +3495,21 @@ a.detail-value:hover {
         gap: var(--space-xl);
     }
 
+    .about-leadership-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .about-leadership-media img {
+        min-height: 320px;
+        max-height: 420px;
+    }
+
+    .about-associations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xl);
+    }
+
     /* Robots page tablet */
     .robots-hero__top {
         flex-direction: column;
@@ -3685,6 +3944,19 @@ a.detail-value:hover {
         justify-content: center;
     }
 
+    .about-leadership-media img {
+        min-height: 260px;
+        max-height: 340px;
+    }
+
+    .about-team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-associations-grid {
+        grid-template-columns: 1fr;
+    }
+
     /* Robots page */
     .robots-hero {
         padding-top: 90px;
@@ -3822,7 +4094,7 @@ a.detail-value:hover {
     }
 
     .navbar__logo-img {
-        height: 24px;
+        height: 28px;
     }
 
     .contact-map-wrapper iframe {
