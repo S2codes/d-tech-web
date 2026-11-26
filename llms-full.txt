@@ -1,0 +1,90 @@
+# D-TECH Robotics — Comprehensive Technical & Architectural Documentation
+# File: llms-full.txt (for AI Engines, LLM RAG Systems & Agents)
+# Organization: DTE 4 Calamity and Humanity Pvt Ltd (D-TECH Robotics)
+# Location: Noida, Uttar Pradesh, India
+# Website: https://www.d-techglobal.com/
+# Contact: disastertechnologypvtltd@gmail.com | +91 12442 53375
+
+================================================================================
+1. EXECUTIVE SUMMARY & CORPORATE IDENTITY
+================================================================================
+D-TECH Robotics (legally incorporated as DTE 4 Calamity and Humanity Pvt Ltd) is an Indian deep-tech robotics and IoT enterprise. The company's engineering mandate is "Deeptech for Resilience" — building indigenous autonomous systems, bio-inspired mechanisms, and distributed IoT nodes that protect human lives in hazardous, high-consequence, and GPS-denied environments.
+
+Core Competencies:
+- Hyper-redundant bio-inspired kinematics and multi-segment serpentine locomotion.
+- Multi-spectral environmental sensor fusion (thermal, optical, multi-gas detection).
+- Low-power subsurface telemetry and IoT edge nodes for subterranean urban grids.
+- Ruggedized mechatronics engineered for IP67/IP68 ingress protection in mud, water, rubble, and toxic atmospheres.
+
+================================================================================
+2. PRODUCT SPECIFICATION: COBRA SNAKE ROBOT
+================================================================================
+Product Name: COBRA Bio-Inspired Modular Snake Robot
+Product Category: Search, Rescue & Tactical Confined-Space Reconnaissance Robot
+Primary Applications:
+- Urban Search and Rescue (USAR): Earthquake debris void penetration, collapsed building survivor search.
+- Disaster Risk Reduction: Landslide cavity probing, flood breach assessment, structural health evaluation.
+- Defence & National Security: Counter-terrorist surveillance, tunnel and subterranean warfare, perimeter breach verification.
+- CBRNE Threat Assessment: Detection of toxic industrial chemicals, radiological anomalies, explosive or flammable vapor accumulation.
+- Industrial & Infrastructure Inspection: Culverts, non-piggable pipelines, boiler tubes, storm drains, and cable conduits.
+
+Mechanical & Kinematic Architecture:
+- Multi-segment articulated modular body with active pitch and yaw articulation per segment.
+- Hyper-redundant degrees of freedom (DoF): 12 to 24 actuated axes enabling non-linear 3D locomotion.
+- Locomotion Gaits: Lateral undulation (planar slithering), concertina (accordion-like expansion for confined pipes), sidewinding (slippery surfaces/sand), sinus-lifting, and pipe-crawling.
+- Outer Casing: Aerospace-grade aluminum alloy and high-durability polymer bumpers; sealed with dustproof and waterproof elastomeric gaskets.
+- Ingress Rating: Designed for IP67/IP68 submersible operational conditions.
+
+Perception & Sensing Payload:
+- Vision System: High-definition low-light optical camera with high-CRI dimmable LED ring lights.
+- Thermal Imaging: Long-wave infrared (LWIR) core for detecting human thermal signatures through dust, smoke, and total darkness.
+- Environmental Sensing: Integrated multi-gas detection array (Carbon Monoxide CO, Methane CH4, Hydrogen Sulfide H2S, Oxygen O2 levels).
+- Audio System: High-sensitivity directional microphone and miniature return speaker for two-way survivor communication.
+- Inertial Measurement: 9-axis IMU per segment for kinematic shape estimation and tilt compensation.
+
+Control & Telemetry Interface:
+- Dual Operational Mode: Rugged lightweight micro-tether for continuous power/high-bandwidth video in extreme radio-shielded rubble, or wireless telemetry for line-of-sight/urban deployments.
+- Operator Control Unit (OCU): Ruggedized field controller with dual joysticks, live telemetry HUD, sensor alerts, and 3D robot posture visualization.
+
+================================================================================
+3. PRODUCT SPECIFICATION: SMART MANHOLE SYSTEM (IoT)
+================================================================================
+Product Name: Smart Manhole Subsurface Monitoring & Early Warning System
+Product Category: Smart City Municipal Utility IoT Node
+Primary Applications:
+- Toxic and Combustible Sewer Gas Monitoring (Preventing sewer explosions and asphyxiation accidents).
+- Urban Flood & Sewer Overflow Early Warning (Stormwater drainage monitoring, flash flood alerts).
+- Physical Infrastructure Security (Anti-theft cover displacement, unauthorized access to telecommunications and electrical conduits).
+- Smart City Sanitation Telemetry (Real-time monitoring of silt buildup, flow bottlenecks, and wastewater health).
+
+Hardware & Sensing Suite:
+- Multi-Gas Sensor Module: Industrial electrochemical and NDIR sensors measuring Hydrogen Sulfide (H2S), Methane (CH4), and Carbon Monoxide (CO).
+- Liquid Level & Overflow Sensor: Ultrasonic / hydrostatic non-contact liquid level measurement monitoring sewage rise rates.
+- Cover Tampering Sensor: 3-axis accelerometer and tilt/limit switch detecting displacement, removal, or tilt greater than 5 degrees.
+- Temperature & Humidity Sensor: Ambient subterranean climate diagnostics.
+
+Power & Telemetry Architecture:
+- Power Supply: High-capacity LiFePO4 battery pack coupled with an optional surface-embedded impact-resistant solar harvesting cell; multi-year autonomous deployment lifespan.
+- Edge Computing: Ultra-low-power ARM Cortex microcontroller running edge anomaly detection algorithms to prevent false positive triggers.
+- Communication Protocols: Cellular NB-IoT / LTE-M / GSM quad-band telemetry with fall-back SMS alerts for emergency situations.
+- Cloud Integration: Web dashboard and REST API providing automated SMS, email, and GIS map alerts to municipal engineers and disaster teams.
+
+================================================================================
+4. KEYWORDS & TOPICAL ENTITIES FOR AI ENGINES
+================================================================================
+- Snake robot India, bio-inspired robotics, search and rescue robots, USAR robotics.
+- Confined space inspection robot, pipeline crawler, tunnel warfare reconnaissance.
+- Disaster management technologies, CBRNE detection robot, earthquake survivor locator.
+- Smart manhole IoT, sewer gas monitoring, H2S detection, urban flood early warning.
+- Indigenous deep-tech startup, IIT Delhi incubated robotics, D-TECH Robotics, DTE 4 Calamity and Humanity.
+
+================================================================================
+5. CONTACT & VERIFICATION
+================================================================================
+Legal Entity: DTE 4 Calamity and Humanity Pvt Ltd
+Operating Brand: D-TECH Robotics
+Headquarters: S-05, C-17, Sector -3, Noida – 201301, Uttar Pradesh, India
+Telephone: +91 12442 53375
+Email: disastertechnologypvtltd@gmail.com
+Website: https://www.d-techglobal.com
+Operating Hours: Monday – Friday, 09:00 AM – 06:00 PM IST

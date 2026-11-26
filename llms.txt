@@ -1,0 +1,19 @@
+# D-TECH Robotics (DTE 4 Calamity and Humanity Pvt Ltd)
+
+> Indigenous deep-tech enterprise engineering rugged autonomous robotics, hyper-redundant bio-inspired systems, and mission-critical IoT telemetry for extreme environments, disaster resilience, defence reconnaissance, and smart urban infrastructure.
+
+D-TECH Robotics develops mission-ready hardware and intelligent firmware designed to protect human lives and operate where humans cannot safely venture. Incubated with premier academic and innovation hubs in India (including I-Hub IIT Delhi ecosystem), D-TECH specializes in serpentine locomotion, multi-sensor environmental fusion, and municipal underground utility telemetry.
+
+## Primary Products & Technologies
+
+- [COBRA Snake Robot](https://www.d-techglobal.com/cobra-snake-robot.html): Modular, hyper-redundant bio-inspired snake robot for urban search and rescue (USAR), post-earthquake rubble exploration, confined pipe inspection, tunnel warfare, and CBRNE (Chemical, Biological, Radiological, Nuclear, and Explosive) reconnaissance. Features 12+ degrees of freedom, multi-gait serpentine locomotion, rugged sealed joints, forward HD camera, thermal imaging, onboard gas sensing, two-way communication, and tethered/wireless control options.
+- [Smart Manhole Monitoring System](https://www.d-techglobal.com/smart-manhole.html): Subsurface IoT telemetry system for underground utility monitoring, toxic gas detection (H2S, CH4, CO), flood/overflow early warning, and anti-theft cover displacement alerts. Integrates solar-harvesting lids, long-life battery modules, and cellular NB-IoT/GSM connectivity for predictive city infrastructure management.
+
+## Company & Research
+
+- [About Us](https://www.d-techglobal.com/about.html): Mission, engineering philosophy, indigenous innovation, and team profile.
+- [Contact & Partnerships](https://www.d-techglobal.com/contact.html): Defense procurement, municipal municipal pilots, academic research collaboration, and general inquiries.
+
+## Technical Documentation for LLMs
+
+- [Full Technical Reference & Specifications](https://www.d-techglobal.com/llms-full.txt): Detailed specifications, mechanical parameters, sensing ranges, communication protocols, and deployment operational envelopes.

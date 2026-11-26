@@ -1,0 +1,52 @@
+# robots.txt for D-TECH Robotics (DTE 4 Calamity and Humanity Pvt Ltd)
+# Website: https://www.d-techglobal.com/
+
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /drafts/
+
+# Allow and optimize for Generative AI & LLM Search Crawlers (GEO / Answer Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://www.d-techglobal.com/sitemap.xml
+
+# LLM Context Documentation (Standard llms.txt protocol)
+# See: https://llmstxt.org/
+# https://www.d-techglobal.com/llms.txt
+# https://www.d-techglobal.com/llms-full.txt
